@@ -1,0 +1,91 @@
+@mixin container {
+    width: 90%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+@mixin section-padding {
+    padding: var(--section-padding);
+}
+
+@mixin section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+
+    h2 {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 15px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: var(--accent);
+    }
+}
+
+@mixin btn-base {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+@mixin btn-primary {
+    @include btn-base;
+    background-color: var(--primary);
+    color: white;
+
+    &:hover {
+        background-color: var(--secondary);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-medium);
+    }
+}
+
+@mixin btn-outline {
+    @include btn-base;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+
+    &:hover {
+        background-color: var(--primary);
+        color: white;
+    }
+}
+
+@mixin btn-light {
+    @include btn-base;
+    background-color: white;
+    color: var(--primary);
+
+    &:hover {
+        background-color: var(--light);
+    }
+}
+
+@mixin responsive($size) {
+  @if $size == sm {
+    @media (max-width: var(--breakpoint-sm)) { @content; }
+  } @else if $size == md {
+    @media (max-width: var(--breakpoint-md)) { @content; }
+  } @else if $size == lg {
+    @media (max-width: var(--breakpoint-lg)) { @content; }
+  } @else if $size == xl {
+    @media (max-width: var(--breakpoint-xl)) { @content; }
+  }
+}

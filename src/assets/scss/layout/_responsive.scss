@@ -1,0 +1,87 @@
+@use "../abstracts/mixins";
+
+@include mixins.responsive(lg) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@include mixins.responsive(md) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--shadow-heavy);
+        padding: 20px 0;
+
+        &.active {
+            left: 0;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .form-options {
+        flex-direction: column;
+    }
+
+    .materials-content,
+    .portal-container {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@include mixins.responsive(sm) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .process-steps {
+        flex-direction: column;
+    }
+
+    .custom-option {
+        flex-direction: column;
+        text-align: center;
+    }
+}

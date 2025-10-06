@@ -1,0 +1,13 @@
+@use "../abstracts/mixins";
+
+.btn {
+    @include mixins.btn-primary;
+}
+
+.btn-outline {
+    @include mixins.btn-outline;
+}
+
+.btn-light {
+    @include mixins.btn-light;
+}
