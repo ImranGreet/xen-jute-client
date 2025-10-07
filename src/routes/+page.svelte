@@ -1,3 +1,7 @@
+<script>
+	import ProductCard from "../components/Productcollection/Product-card.svelte";
+
+</script>
 <!-- Hero Section -->
 <section class="hero" id="home">
 	<div class="container">
@@ -13,65 +17,27 @@
 </section>
 
 <!-- Products Section -->
-<section class="products" id="products">
+<!-- Products Section -->
+<section class="products">
 	<div class="container">
-		<div class="section-title">
-			<h2>Our Products</h2>
-			<p>Explore our range of sustainable jute fashion bags</p>
+		<div class="products-grid" id="productsContainer"> 
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
+			<ProductCard />
 		</div>
-		<div class="product-grid">
-			<div class="product-card">
-				<div class="product-img">
-					<i class="fas fa-shopping-bag"></i>
-				</div>
-				<div class="product-info">
-					<h3>Classic Tote Bag</h3>
-					<p>
-						Spacious and durable tote bag perfect for everyday use. Available in multiple colors and
-						custom prints.
-					</p>
-					<a href="#contact" class="btn">Request Sample</a>
-				</div>
-			</div>
-			<div class="product-card">
-				<div class="product-img">
-					<i class="fas fa-briefcase"></i>
-				</div>
-				<div class="product-info">
-					<h3>Jute Laptop Bag</h3>
-					<p>
-						Stylish and protective laptop bag with padded interior. Ideal for professionals who
-						value sustainability.
-					</p>
-					<a href="#contact" class="btn">Request Sample</a>
-				</div>
-			</div>
-			<div class="product-card">
-				<div class="product-img">
-					<i class="fas fa-gift"></i>
-				</div>
-				<div class="product-info">
-					<h3>Promotional Gift Bag</h3>
-					<p>
-						Customizable gift bags perfect for corporate events, weddings, and special occasions
-						with your branding.
-					</p>
-					<a href="#contact" class="btn">Request Sample</a>
-				</div>
-			</div>
-			<div class="product-card">
-				<div class="product-img">
-					<i class="fas fa-tshirt"></i>
-				</div>
-				<div class="product-info">
-					<h3>Fashion Shoulder Bag</h3>
-					<p>
-						Trendy shoulder bags with modern designs. Perfect for fashion retailers looking for
-						eco-friendly options.
-					</p>
-					<a href="#contact" class="btn">Request Sample</a>
-				</div>
-			</div>
+
+		<div class="pagination">
+			<a href="#" class="active">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#"><i class="fas fa-chevron-right"></i></a>
 		</div>
 	</div>
 </section>
