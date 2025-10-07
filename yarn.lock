@@ -1812,6 +1812,11 @@ ws@^8.18.2:
   resolved "https://registry.npmjs.org/ws/-/ws-8.18.3.tgz"
   integrity sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==
 
+xenmesh-ui@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.npmjs.org/xenmesh-ui/-/xenmesh-ui-0.0.22.tgz"
+  integrity sha512-z4IsGxpPIcw9ZJYj+wXe9TXL4RPFxnt5+P4P3jqykw1ynT1NvTdX4tuBuiQx4lVJtp6AqxpKTJiduNBjs1/TEQ==
+
 yaml@^1.10.2:
   version "1.10.2"
   resolved "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz"

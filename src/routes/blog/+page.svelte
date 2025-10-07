@@ -1,11 +1,5 @@
-<script lang="ts">
-	import Footer from "../../components/Footer.svelte";
-	import Header from "../../components/Header.svelte";
 
-</script>
-  <!-- Header -->
-   <Header />
-
+ 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
@@ -170,5 +164,3 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <Footer />

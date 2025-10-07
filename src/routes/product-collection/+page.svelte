@@ -1,21 +1,9 @@
+<script>
+	import Footer from "../../components/Footer.svelte";
+	import Header from "../../components/Header.svelte";
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">Xen<span>mesh</span></a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="index.html#reviews">Reviews</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+</script>
+
 
     <!-- Page Header -->
     <section class="page-header">
@@ -89,47 +77,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Xenmesh</h3>
-                    <p>Leading exporter of premium jute fashion bags to global markets including EU, Japan, USA, and Canada.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Products</a>
-                    <a href="index.html#reviews">Reviews</a>
-                    <a href="index.html#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <a href="index.html#contact">Sample Orders</a>
-                    <a href="index.html#contact">Custom Designs</a>
-                    <a href="index.html#contact">Bulk Export</a>
-                    <a href="index.html#contact">Private Labeling</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Markets</h3>
-                    <a href="#">European Union</a>
-                    <a href="#">Japan</a>
-                    <a href="#">United States</a>
-                    <a href="#">Canada</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Xenmesh. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+ 
 
    
 
