@@ -1,206 +1,227 @@
+<!-- Hero Section -->
+<section class="hero" id="home">
+	<div class="container">
+		<div class="hero-content">
+			<h1>Eco-Friendly Jute Fashion Bags for Global Markets</h1>
+			<p>
+				Premium quality jute bags crafted with sustainability in mind. Exporting to EU, Japan, USA,
+				Canada and beyond.
+			</p>
+			<a href="#contact" class="btn">Get In Touch</a>
+		</div>
+	</div>
+</section>
 
+<!-- Products Section -->
+<section class="products" id="products">
+	<div class="container">
+		<div class="section-title">
+			<h2>Our Products</h2>
+			<p>Explore our range of sustainable jute fashion bags</p>
+		</div>
+		<div class="product-grid">
+			<div class="product-card">
+				<div class="product-img">
+					<i class="fas fa-shopping-bag"></i>
+				</div>
+				<div class="product-info">
+					<h3>Classic Tote Bag</h3>
+					<p>
+						Spacious and durable tote bag perfect for everyday use. Available in multiple colors and
+						custom prints.
+					</p>
+					<a href="#contact" class="btn">Request Sample</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<div class="product-img">
+					<i class="fas fa-briefcase"></i>
+				</div>
+				<div class="product-info">
+					<h3>Jute Laptop Bag</h3>
+					<p>
+						Stylish and protective laptop bag with padded interior. Ideal for professionals who
+						value sustainability.
+					</p>
+					<a href="#contact" class="btn">Request Sample</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<div class="product-img">
+					<i class="fas fa-gift"></i>
+				</div>
+				<div class="product-info">
+					<h3>Promotional Gift Bag</h3>
+					<p>
+						Customizable gift bags perfect for corporate events, weddings, and special occasions
+						with your branding.
+					</p>
+					<a href="#contact" class="btn">Request Sample</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<div class="product-img">
+					<i class="fas fa-tshirt"></i>
+				</div>
+				<div class="product-info">
+					<h3>Fashion Shoulder Bag</h3>
+					<p>
+						Trendy shoulder bags with modern designs. Perfect for fashion retailers looking for
+						eco-friendly options.
+					</p>
+					<a href="#contact" class="btn">Request Sample</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Eco-Friendly Jute Fashion Bags for Global Markets</h1>
-                <p>Premium quality jute bags crafted with sustainability in mind. Exporting to EU, Japan, USA, Canada and beyond.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-        </div>
-    </section>
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+	<div class="container">
+		<div class="section-title">
+			<h2>Client Reviews</h2>
+			<p>What our international clients say about us</p>
+		</div>
+		<div class="review-container">
+			<div class="review-card">
+				<p class="review-text">
+					"Xenmesh provided excellent quality jute bags for our retail chain in Germany. Their
+					attention to detail and timely delivery was impressive."
+				</p>
+				<div class="reviewer">
+					<div class="reviewer-img">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="reviewer-info">
+						<h4>Klaus Müller</h4>
+						<p>Retail Manager, Germany</p>
+					</div>
+				</div>
+			</div>
+			<div class="review-card">
+				<p class="review-text">
+					"We've been working with Xenmesh for over two years now. Their custom design capabilities
+					and consistent quality make them our preferred supplier."
+				</p>
+				<div class="reviewer">
+					<div class="reviewer-img">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="reviewer-info">
+						<h4>Sarah Johnson</h4>
+						<p>Fashion Buyer, USA</p>
+					</div>
+				</div>
+			</div>
+			<div class="review-card">
+				<p class="review-text">
+					"The sample process was smooth, and the final bulk order exceeded our expectations. Highly
+					recommended for Japanese market requirements."
+				</p>
+				<div class="reviewer">
+					<div class="reviewer-img">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="reviewer-info">
+						<h4>Yuki Tanaka</h4>
+						<p>Import Manager, Japan</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Products</h2>
-                <p>Explore our range of sustainable jute fashion bags</p>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img">
-                        <i class="fas fa-shopping-bag"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Classic Tote Bag</h3>
-                        <p>Spacious and durable tote bag perfect for everyday use. Available in multiple colors and custom prints.</p>
-                        <a href="#contact" class="btn">Request Sample</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Jute Laptop Bag</h3>
-                        <p>Stylish and protective laptop bag with padded interior. Ideal for professionals who value sustainability.</p>
-                        <a href="#contact" class="btn">Request Sample</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Promotional Gift Bag</h3>
-                        <p>Customizable gift bags perfect for corporate events, weddings, and special occasions with your branding.</p>
-                        <a href="#contact" class="btn">Request Sample</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Fashion Shoulder Bag</h3>
-                        <p>Trendy shoulder bags with modern designs. Perfect for fashion retailers looking for eco-friendly options.</p>
-                        <a href="#contact" class="btn">Request Sample</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+	<div class="container">
+		<div class="section-title">
+			<h2>Get In Touch</h2>
+			<p>Connect with us for samples, custom designs, or bulk orders</p>
+		</div>
+		<div class="contact-container">
+			<div class="contact-info">
+				<h3>Let's Work Together</h3>
+				<p>
+					We specialize in supplying high-quality jute fashion bags to international markets.
+					Whether you need samples, custom designs, or bulk orders, we're here to help.
+				</p>
 
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <div class="container">
-            <div class="section-title">
-                <h2>Client Reviews</h2>
-                <p>What our international clients say about us</p>
-            </div>
-            <div class="review-container">
-                <div class="review-card">
-                    <p class="review-text">"Xenmesh provided excellent quality jute bags for our retail chain in Germany. Their attention to detail and timely delivery was impressive."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Klaus Müller</h4>
-                            <p>Retail Manager, Germany</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"We've been working with Xenmesh for over two years now. Their custom design capabilities and consistent quality make them our preferred supplier."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Fashion Buyer, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"The sample process was smooth, and the final bulk order exceeded our expectations. Highly recommended for Japanese market requirements."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Yuki Tanaka</h4>
-                            <p>Import Manager, Japan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="contact-details">
+					<div class="contact-item">
+						<div class="contact-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div>
+							<h4>Our Location</h4>
+							<p>Dhaka, Bangladesh</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div>
+							<h4>Email Us</h4>
+							<p>info@xenmesh.com</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="contact-icon">
+							<i class="fas fa-phone"></i>
+						</div>
+						<div>
+							<h4>Call Us</h4>
+							<p>+880 1234 567890</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Connect with us for samples, custom designs, or bulk orders</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>We specialize in supplying high-quality jute fashion bags to international markets. Whether you need samples, custom designs, or bulk orders, we're here to help.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Our Location</h4>
-                                <p>Dhaka, Bangladesh</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email Us</h4>
-                                <p>info@xenmesh.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Call Us</h4>
-                                <p>+880 1234 567890</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Send Us Your Requirements</h3>
-                    <p>Select your preferred option below:</p>
-                    
-                    <div class="form-options">
-                        <div class="form-option active" data-option="sample">
-                            <i class="fas fa-box-open"></i>
-                            <p>Purchase Sample</p>
-                        </div>
-                        <div class="form-option" data-option="custom">
-                            <i class="fas fa-pencil-alt"></i>
-                            <p>Custom Design</p>
-                        </div>
-                        <div class="form-option" data-option="bulk">
-                            <i class="fas fa-shipping-fast"></i>
-                            <p>Bulk Order</p>
-                        </div>
-                    </div>
-                    
-                    <form id="inquiryForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="country">Country</label>
-                            <input type="text" id="country" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Requirements</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Submit Inquiry</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="contact-form">
+				<h3>Send Us Your Requirements</h3>
+				<p>Select your preferred option below:</p>
 
-   
+				<div class="form-options">
+					<div class="form-option active" data-option="sample">
+						<i class="fas fa-box-open"></i>
+						<p>Purchase Sample</p>
+					</div>
+					<div class="form-option" data-option="custom">
+						<i class="fas fa-pencil-alt"></i>
+						<p>Custom Design</p>
+					</div>
+					<div class="form-option" data-option="bulk">
+						<i class="fas fa-shipping-fast"></i>
+						<p>Bulk Order</p>
+					</div>
+				</div>
 
-   
+				<form id="inquiryForm">
+					<div class="form-group">
+						<label for="name">Full Name</label>
+						<input type="text" id="name" class="form-control" required />
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<input type="email" id="email" class="form-control" required />
+					</div>
+					<div class="form-group">
+						<label for="company">Company Name</label>
+						<input type="text" id="company" class="form-control" />
+					</div>
+					<div class="form-group">
+						<label for="country">Country</label>
+						<input type="text" id="country" class="form-control" required />
+					</div>
+					<div class="form-group">
+						<label for="message">Your Requirements</label>
+						<textarea id="message" class="form-control" required></textarea>
+					</div>
+					<button type="submit" class="btn">Submit Inquiry</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
