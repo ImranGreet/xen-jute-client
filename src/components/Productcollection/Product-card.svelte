@@ -1,11 +1,14 @@
 <script lang="ts">
-	let product = {
-		name: 'Eco-Friendly Tote Bag',
-		size: 'medium',
-		price: '$15.00',
-		description: 'A stylish and durable tote bag made from 100% jute, perfect for everyday use.',
-		icon: 'fas fa-shopping-bag',
-		badge: 'Best Seller'
+	import type Product from '$lib/types/types';
+	let { name, size, price, description, icon, badge } = $props();
+
+	let product: Product = {
+		name,
+		size,
+		price,
+		description,
+		icon,
+		badge
 	};
 </script>
 

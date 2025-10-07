@@ -1,6 +1,33 @@
 <script lang="ts">
 
 	import ProductCard from '../../components/Productcollection/Product-card.svelte';
+	
+	let products=[{
+		name: 'Eco-Friendly Tote Bag',
+		size: 'medium',
+		price: '$15.00',
+		description: 'A stylish and durable tote bag made from 100% jute, perfect for everyday use.',
+		icon: 'fas fa-shopping-bag',
+		badge: 'Best Seller'
+	},
+	{
+		name: 'Jute Laptop Bag',
+		size: 'large',
+		price: '$30.00',
+		description: 'Protect your laptop in style with this eco-friendly jute laptop bag.',
+		icon: 'fas fa-laptop',
+		badge: ''
+	},
+	{
+		name: 'Promotional Jute Bag',
+		size: 'small',
+		price: '$8.00',
+		description: 'Customizable jute bags ideal for promotional events and giveaways.',
+		icon: 'fas fa-gift',
+		badge: '',
+	},
+	]
+
 </script>
 
 <!-- Page Header -->
@@ -65,15 +92,16 @@
 <section class="products">
 	<div class="container">
 		<div class="products-grid" id="productsContainer"> 
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
+			{#each products as product}
+				<ProductCard 
+					name={product.name}
+					size={product.size}
+					price={product.price}
+					description={product.description}
+					icon={product.icon}
+					badge={product.badge}
+				/>
+			{/each}
 		</div>
 
 		<div class="pagination">

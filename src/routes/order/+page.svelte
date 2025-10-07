@@ -893,26 +893,7 @@
     }
 </style>
 
-<!-- Header -->
-<header>
-    <div class="container">
-        <nav class="navbar">
-            <a href="/" class="logo">Xen<span>mesh</span></a>
-            <ul class="nav-links" class:active={mobileMenuOpen}>
-                <li><a href="/" on:click={closeMobileMenu}>Home</a></li>
-                <li><a href="/products" on:click={closeMobileMenu}>Bags</a></li>
-                <li><a href="/gift-boxes" on:click={closeMobileMenu}>Gift Boxes</a></li>
-                <li><a href="/custom-design" on:click={closeMobileMenu}>Custom Design</a></li>
-                <li><a href="/blog" on:click={closeMobileMenu}>Blog</a></li>
-                <li><a href="/order" on:click={closeMobileMenu}>Order</a></li>
-                <li><a href="/#contact" on:click={closeMobileMenu}>Contact</a></li>
-            </ul>
-            <div class="hamburger" on:click={toggleMobileMenu}>
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </div>
-</header>
+
 
 <!-- Page Header -->
 <section class="page-header">
