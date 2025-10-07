@@ -6,7 +6,7 @@
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/product-collection">Our Products</a></li>
-                    <li><a href="/gift-boxes">Gift Boxes</a></li>
+                    <li><a href="/gift-box">Gift Boxes</a></li>
                     <li><a href="/custom-design">Custom Design</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/order">Order</a></li>

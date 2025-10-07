@@ -28,7 +28,12 @@
 
          </div>
          <div class="copyright">
-             <p>&copy; 2023 Xenjute. All rights reserved.</p>
+             <p>&copy; {year} Xenjute. All rights reserved.</p>
          </div>
      </div>
  </footer>
+
+
+ <script lang="ts">
+   let year: number = new Date().getFullYear();
+ </script>
