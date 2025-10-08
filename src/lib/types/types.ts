@@ -36,3 +36,14 @@ export interface Uses {
     description: string;
     icon: string;
 }
+
+
+export interface GiftFeature {
+    id:string,
+    giftTitle:string,
+    giftCategory:string,
+    giftMaterial:string[],
+    giftCode:string,
+    giftDimentions:number[],
+    giftFeatures:string[]
+}

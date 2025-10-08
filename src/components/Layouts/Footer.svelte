@@ -5,7 +5,7 @@
                  <h3>Xenjute</h3>
                  <p>Leading exporter of premium jute fashion bags to global markets including EU, Japan, USA, and Canada.</p>
                  <div class="social-links">
-                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://www.facebook.com/profile.php?id=61581926151095" target="_blank"><i class="fab fa-facebook-f"></i></a>
                      <a href="#"><i class="fab fa-twitter"></i></a>
                      <a href="#"><i class="fab fa-instagram"></i></a>
                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
