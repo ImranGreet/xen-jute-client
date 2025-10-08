@@ -7,9 +7,6 @@ export default interface Product {
     badge?: string;
 }
 
-
-
-
 export interface BlogPost {
     id: string;
     title: string;
@@ -23,4 +20,19 @@ export interface BlogPost {
     readTime?: number;
     tags?: string[];
     slug: string;
+}
+
+export interface Review {
+    id: string;
+    reviewerName: string;
+    reviewerRole: string;
+    reviewerImage?: string;
+    reviewText: string;
+}
+
+export interface Uses {
+    id: string;
+    title: string;
+    description: string;
+    icon: string;
 }

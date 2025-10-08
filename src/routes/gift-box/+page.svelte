@@ -1,6 +1,39 @@
 
 <script lang="ts">
-    
+	import Uses from "../../components/Card/giftcard/uses.svelte";
+
+    let uses = [
+        {
+            id: "1",
+            title: "Apparel Brands",
+            description: "Sustainable packaging solution for clothing, accessories, and fashion items.",
+            icon: "fas fa-tshirt"
+        },
+        {
+            id: "2",
+            title: "Beauty Products",
+            description: "Natural packaging for cosmetics, skincare, and wellness products.",
+            icon: "fas fa-spa"
+        },
+        {
+            id: "3",
+            title: "Food & Beverage",
+            description: "Perfect for specialty foods, wines, teas, and gourmet gift sets.",
+            icon: "fas fa-wine-bottle"
+        },
+        {
+            id: "4",
+            title: "Jewelry",
+            description: "Luxurious yet sustainable packaging for fine jewelry and accessories.",
+            icon: "fas fa-gem"
+        },
+        {
+            id: "5",
+            title: "Corporate Gifting",
+            description: "Professional yet eco-friendly packaging for corporate gifts and client appreciation.",
+            icon: "fas fa-gift"
+        }
+    ];
 
 </script>
 
@@ -292,26 +325,7 @@
                     </div>
                 </div>
 
-                <div class="custom-preview">
-                    <h3>Customization Preview</h3>
-                    <div class="preview-box">
-                        <div class="box-3d" id="box3d">
-                            <div class="box-face box-front">Your Logo Here</div>
-                            <div class="box-face box-back"></div>
-                            <div class="box-face box-right"></div>
-                            <div class="box-face box-left"></div>
-                            <div class="box-face box-top"></div>
-                            <div class="box-face box-bottom"></div>
-                        </div>
-                    </div>
-                    <div class="preview-controls">
-                        <button class="preview-btn active" data-view="front">Front</button>
-                        <button class="preview-btn" data-view="back">Back</button>
-                        <button class="preview-btn" data-view="top">Top</button>
-                        <button class="preview-btn" data-view="rotate">3D View</button>
-                    </div>
-                    <p style="margin-top: 20px; color: #777;">Rotate and examine the box from all angles to visualize your custom design.</p>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -325,53 +339,15 @@
             </div>
 
             <div class="applications-grid">
-                <div class="application-card">
-                    <div class="application-icon">
-                        <i class="fas fa-ring"></i>
-                    </div>
-                    <h3>Wedding Favors</h3>
-                    <p>Elegant packaging for wedding favors, bridal party gifts, and special occasion mementos.</p>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h3>Apparel Brands</h3>
-                    <p>Sustainable packaging solution for clothing, accessories, and fashion items.</p>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Beauty Products</h3>
-                    <p>Natural packaging for cosmetics, skincare, and wellness products.</p>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-icon">
-                        <i class="fas fa-wine-bottle"></i>
-                    </div>
-                    <h3>Food & Beverage</h3>
-                    <p>Perfect for specialty foods, wines, teas, and gourmet gift sets.</p>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <h3>Jewelry</h3>
-                    <p>Luxurious yet sustainable packaging for fine jewelry and accessories.</p>
-                </div>
-
-                <div class="application-card">
-                    <div class="application-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <h3>Corporate Gifting</h3>
-                    <p>Professional yet eco-friendly packaging for corporate gifts and client appreciation.</p>
-                </div>
+               {#each uses as use}
+                    <Uses 
+                        id={use.id}
+                        title={use.title}
+                        description={use.description}
+                        icon={use.icon}
+                    />
+                {/each}
+           
             </div>
         </div>
     </section>

@@ -1,5 +1,6 @@
 <script>
-	import ProductCard from "../components/Productcollection/Product-card.svelte";
+	import Clientreview from "../components/Card/review/Clientreview.svelte";
+import ProductCard from "../components/Productcollection/Product-card.svelte";
 	let products = [
 		{
 			name: "Eco-Friendly Tote Bag",
@@ -27,6 +28,33 @@
 				"Customizable jute bags ideal for promotional events and giveaways.",
 			icon: "fas fa-gift",
 			badge: ""
+		}
+	];
+
+	let reviews = [
+		{
+			id: "1",
+			reviewerName: "John Doe",
+			reviewerRole: "Purchasing Manager, EcoGoods Ltd.",
+			reviewerImage: "",
+			reviewText:
+				"Xenmesh provided us with high-quality jute bags that perfectly matched our sustainability goals. Their customer service was exceptional, and the delivery was prompt. Highly recommend!"
+		},
+		{
+			id: "2",
+			reviewerName: "Jane Smith",
+			reviewerRole: "Owner, GreenMarket",
+			reviewerImage: "",
+			reviewText:
+				"We've been sourcing jute bags from Xenmesh for our store for over a year now. The quality is consistently excellent, and our customers love the eco-friendly designs. Great experience overall!"
+		},
+		{
+			id: "3",
+			reviewerName: "Akira Tanaka",
+			reviewerRole: "Import Manager, Tokyo Eco Supplies",
+			reviewerImage: "",
+			reviewText:
+				"Xenmesh has been a reliable partner for our jute bag needs. Their products meet international standards, and their team is always responsive to our inquiries. Looking forward to continuing our collaboration."
 		}
 	];
 
@@ -80,51 +108,17 @@
 			<p>What our international clients say about us</p>
 		</div>
 		<div class="review-container">
-			<div class="review-card">
-				<p class="review-text">
-					"Xenmesh provided excellent quality jute bags for our retail chain in Germany. Their
-					attention to detail and timely delivery was impressive."
-				</p>
-				<div class="reviewer">
-					<div class="reviewer-img">
-						<i class="fas fa-user"></i>
-					</div>
-					<div class="reviewer-info">
-						<h4>Klaus Müller</h4>
-						<p>Retail Manager, Germany</p>
-					</div>
-				</div>
-			</div>
-			<div class="review-card">
-				<p class="review-text">
-					"We've been working with Xenmesh for over two years now. Their custom design capabilities
-					and consistent quality make them our preferred supplier."
-				</p>
-				<div class="reviewer">
-					<div class="reviewer-img">
-						<i class="fas fa-user"></i>
-					</div>
-					<div class="reviewer-info">
-						<h4>Sarah Johnson</h4>
-						<p>Fashion Buyer, USA</p>
-					</div>
-				</div>
-			</div>
-			<div class="review-card">
-				<p class="review-text">
-					"The sample process was smooth, and the final bulk order exceeded our expectations. Highly
-					recommended for Japanese market requirements."
-				</p>
-				<div class="reviewer">
-					<div class="reviewer-img">
-						<i class="fas fa-user"></i>
-					</div>
-					<div class="reviewer-info">
-						<h4>Yuki Tanaka</h4>
-						<p>Import Manager, Japan</p>
-					</div>
-				</div>
-			</div>
+			
+			{#each reviews as review}
+				<Clientreview 
+					id={review.id}
+					reviewerName={review.reviewerName}
+					reviewerRole={review.reviewerRole}
+					reviewerImage={review.reviewerImage}
+					reviewText={review.reviewText}
+				/>
+			{/each}
+			
 		</div>
 	</div>
 </section>
