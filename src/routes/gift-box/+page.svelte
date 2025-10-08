@@ -44,7 +44,8 @@
 			giftMaterial: ['Bamboo', 'Jute'],
 			giftCode: 'x-0-f-35',
 			giftDimentions: [12, 10, 23],
-			features: ['Natural', 'No fuel']
+			features: ['Natural', 'No fuel'],
+			giftThumbnail:"https://images.unsplash.com/photo-1577135762420-935f66186244?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 		},
 		{
 			id: 1,
@@ -53,16 +54,18 @@
 			giftMaterial: ['Bamboo', 'Jute'],
 			giftCode: 'xm-0L-f-35',
 			giftDimentions: [12, 10, 23],
-			features: ['Natural', 'No fuel']
+			features: ['Natural', 'No fuel'],
+			giftThumbnail:"https://images.unsplash.com/photo-1655105482013-b8d1fe932168?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 		},
 		{
 			id: 1,
 			giftTitle: 'Jute & Bamboo Luxury Box',
-			giftCategory: 'Luxary',
+			giftCategory: 'Ordinary',
 			giftMaterial: ['Bamboo', 'Jute'],
 			giftCode: 'x-0-f-35',
 			giftDimentions: [12, 10, 23],
-			features: ['Natural', 'No fuel']
+			features: ['Natural', 'No fuel'],
+			giftThumbnail:"https://images.unsplash.com/photo-1585800935411-d7d7eed23ccc?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 		}
 	];
 
@@ -182,6 +185,7 @@
 					giftFeatures={feature.features}
 					giftMaterial={feature.giftMaterial}
 					giftTitle={feature.giftTitle}
+					giftThumbnail={feature.giftThumbnail}
 				/>
 			{/each}
 		</div>

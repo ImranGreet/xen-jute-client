@@ -1,22 +1,31 @@
 <script lang="ts">
 	import type { GiftFeature } from '$lib/types/types';
 
-	let { id, giftTitle,giftCategory, giftMaterial, giftCode, giftDimentions, giftFeatures } = $props();
+	let { id, giftTitle, giftCategory, giftMaterial, giftCode, giftDimentions, giftFeatures,giftThumbnail } =
+		$props();
 	let Features: GiftFeature = {
 		id,
-        giftTitle,
+		giftTitle,
 		giftCategory,
 		giftMaterial,
 		giftCode,
 		giftDimentions,
-		giftFeatures
+		giftFeatures,
+		giftThumbnail,
 	};
 </script>
 
 <div class="gift-card" data-category="mixed luxury">
 	<div class="gift-badge">{Features.giftCategory}</div>
 	<div class="gift-image mixed">
-		<i class="fas fa-gem"></i>
+		<!-- <i class="fas fa-gem"></i> -->
+
+		<img
+			src="{Features.giftThumbnail}"
+			alt="{Features.giftTitle}"
+			width="100%"
+			height="100%"
+		/>
 	</div>
 	<div class="gift-info p-20">
 		<div class="gift-meta">
@@ -41,9 +50,8 @@
 	</div>
 </div>
 
-
 <style>
-    .p-20{
-        padding: 20px;
-    }
+	.p-20 {
+		padding: 20px;
+	}
 </style>

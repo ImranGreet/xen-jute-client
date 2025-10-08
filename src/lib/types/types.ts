@@ -45,5 +45,6 @@ export interface GiftFeature {
     giftMaterial:string[],
     giftCode:string,
     giftDimentions:number[],
-    giftFeatures:string[]
+    giftFeatures:string[],
+    giftThumbnail:string
 }
