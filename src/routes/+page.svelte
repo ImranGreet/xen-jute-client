@@ -74,7 +74,6 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 </section>
 
 <!-- Products Section -->
-<!-- Products Section -->
 <section class="products">
 	<div class="container">
 		<div class="products-grid" id="productsContainer"> 
@@ -108,7 +107,6 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 			<p>What our international clients say about us</p>
 		</div>
 		<div class="review-container">
-			
 			{#each reviews as review}
 				<Clientreview 
 					id={review.id}
@@ -118,7 +116,6 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 					reviewText={review.reviewText}
 				/>
 			{/each}
-			
 		</div>
 	</div>
 </section>
@@ -169,49 +166,7 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 				</div>
 			</div>
 
-			<div class="contact-form">
-				<h3>Send Us Your Requirements</h3>
-				<p>Select your preferred option below:</p>
-
-				<div class="form-options">
-					<div class="form-option active" data-option="sample">
-						<i class="fas fa-box-open"></i>
-						<p>Purchase Sample</p>
-					</div>
-					<div class="form-option" data-option="custom">
-						<i class="fas fa-pencil-alt"></i>
-						<p>Custom Design</p>
-					</div>
-					<div class="form-option" data-option="bulk">
-						<i class="fas fa-shipping-fast"></i>
-						<p>Bulk Order</p>
-					</div>
-				</div>
-
-				<form id="inquiryForm">
-					<div class="form-group">
-						<label for="name">Full Name</label>
-						<input type="text" id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label for="email">Email Address</label>
-						<input type="email" id="email" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label for="company">Company Name</label>
-						<input type="text" id="company" class="form-control" />
-					</div>
-					<div class="form-group">
-						<label for="country">Country</label>
-						<input type="text" id="country" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label for="message">Your Requirements</label>
-						<textarea id="message" class="form-control" required></textarea>
-					</div>
-					<button type="submit" class="btn">Submit Inquiry</button>
-				</form>
-			</div>
+			
 		</div>
 	</div>
 </section>
