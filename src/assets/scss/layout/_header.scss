@@ -16,7 +16,6 @@ header {
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
-
     span {
         color: var(--accent);
     }
@@ -39,7 +38,8 @@ header {
         &:hover {
             color: var(--primary);
         }
-        &.active{
+
+        &.active {
             text-decoration: underline;
             text-underline-offset: 8px;
             border-radius: 99px;
@@ -53,11 +53,12 @@ header {
     font-size: 1.5rem;
 }
 
-@media(max-width:640px){
-    .hamburger{
+@media(max-width:640px) {
+    .hamburger {
         display: inline-block;
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
         position: fixed;
         top: 80px;
@@ -67,7 +68,8 @@ header {
         z-index: 999;
         right: 0;
     }
-    .show-navbar{
+
+    .show-navbar {
         display: flex;
         flex-direction: column;
         transition: all 0.3s ease-in-out;

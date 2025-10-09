@@ -68,7 +68,7 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 				Premium quality jute bags crafted with sustainability in mind. Exporting to EU, Japan, USA,
 				Canada and beyond.
 			</p>
-			<a href="#contact" class="btn">Get In Touch</a>
+			<a href="/product-collection" class="btn">Get In Touch</a>
 		</div>
 	</div>
 </section>
@@ -151,7 +151,7 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 						</div>
 						<div>
 							<h4>Email Us</h4>
-							<p>info@xenmesh.com</p>
+							<p><a href="mailto:hossainimran1208@gmail.com" class="email-custom">hossainimran1208@gmail.com</a></p>
 						</div>
 					</div>
 					<div class="contact-item">
@@ -160,7 +160,7 @@ import ProductCard from "../components/Productcollection/Product-card.svelte";
 						</div>
 						<div>
 							<h4>Call Us</h4>
-							<p>+880 1234 567890</p>
+							<p> <span><i class="fa-brands fa-whatsapp"></i></span>+8801912444216</p>
 						</div>
 					</div>
 				</div>
