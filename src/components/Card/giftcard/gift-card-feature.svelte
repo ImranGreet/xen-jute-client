@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { GiftFeature } from '$lib/types/types';
+	import { XenButton } from 'xenmesh-ui';
 
 	let { id, giftTitle, giftCategory, giftMaterial, giftCode, giftDimentions, giftFeatures,giftThumbnail } =
 		$props();
@@ -44,8 +45,8 @@
 			{/each}
 		</ul>
 		<div class="gift-actions">
-			<a href="order.html" class="btn">Order Sample</a>
-			<a href="custom-design.html" class="btn btn-outline">Customize</a>
+			<!-- <button class="btn">Add To Cart</button> -->
+			<XenButton className="btn w-100p">Add To Cart</XenButton>
 		</div>
 	</div>
 </div>
@@ -53,5 +54,13 @@
 <style>
 	.p-20 {
 		padding: 20px;
+	}
+	.gift-actions{
+		width: 100%;
+	}
+	.gift-actions >.btn{
+		width: 100%;
+		text-align: center;
+		background: var(--primary);
 	}
 </style>
