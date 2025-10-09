@@ -45,8 +45,8 @@
 			{/each}
 		</ul>
 		<div class="gift-actions">
-			<!-- <button class="btn">Add To Cart</button> -->
-			<XenButton className="btn w-100p">Add To Cart</XenButton>
+			<button class="btn">Add To Cart</button>
+			<!-- <XenButton className="btn w-100p">Add To Cart</XenButton> -->
 		</div>
 	</div>
 </div>
