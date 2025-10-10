@@ -15,7 +15,7 @@
 <header>
 	<div class="container">
 		<nav class="navbar">
-			<a href="/" class="logo">Xen<span>mesh</span></a>
+			<a href="/" class="logo">Xen<span>jute</span></a>
 
 			<ul class="nav-links" class:show-navbar={showMenu}>
 				<li>

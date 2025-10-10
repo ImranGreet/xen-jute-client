@@ -17,7 +17,16 @@
 		clientInformationStep = false;
 		showSampleSteps = true;
 	};
+    
+	let backToClientInfo = function(){
+		clientInformationStep=true;
+		shippingInfomationStep=false;
+	}
 
+	let backtoShippingInfo = function(){
+		shippingInfomationStep=true;
+		reviewSubmitStep=false;
+	}
 	let showClientInformation = function (): void {
 		showSampleSteps = false;
 		clientInformationStep = true;
@@ -333,7 +342,7 @@
 							</div>
 						</div>
 						<div class="form-navigation">
-							<button type="button" class="btn btn-outline">Back to Details</button>
+							<button type="button" class="btn btn-outline" onclick="{backToClientInfo}">Back to Details</button>
 							<button type="button" class="btn" onclick={showReviewStep}>Review & Submit</button>
 						</div>
 					</div>
@@ -400,7 +409,7 @@
 							</p>
 						</div>
 						<div class="form-navigation">
-							<button type="button" class="btn btn-outline">Back to Shipping</button>
+							<button type="button" class="btn btn-outline" onclick="{backtoShippingInfo}">Back to Shipping</button>
 							<button type="button" class="btn" onclick={showSuccessMessage}
 								>Submit Sample Request</button
 							>
@@ -820,65 +829,6 @@
 		color: #555;
 	}
 
-	footer {
-		background-color: var(--primary);
-		color: white;
-		padding: 50px 0 20px;
-	}
-
-	.footer-content {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 30px;
-		margin-bottom: 40px;
-	}
-
-	.footer-col h3 {
-		margin-bottom: 20px;
-		font-size: 1.2rem;
-	}
-
-	.footer-col p,
-	.footer-col a {
-		color: #ddd;
-		margin-bottom: 10px;
-		display: block;
-		text-decoration: none;
-	}
-
-	.footer-col a:hover {
-		color: white;
-	}
-
-	.social-links {
-		display: flex;
-		gap: 15px;
-		margin-top: 20px;
-	}
-
-	.social-links a {
-		width: 40px;
-		height: 40px;
-		background-color: rgba(255, 255, 255, 0.1);
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: all 0.3s ease;
-	}
-
-	.social-links a:hover {
-		background-color: var(--accent);
-		transform: translateY(-3px);
-	}
-
-	.copyright {
-		text-align: center;
-		padding-top: 20px;
-		border-top: 1px solid rgba(255, 255, 255, 0.1);
-		font-size: 0.9rem;
-		color: #aaa;
-	}
 
 	@media (max-width: 992px) {
 		.page-header h1 {
@@ -890,21 +840,8 @@
 	}
 
 	@media (max-width: 768px) {
-		.navbar {
-			padding: 15px 0;
-		}
-		.nav-links {
-			position: fixed;
-			top: 70px;
-			left: -100%;
-			width: 100%;
-			flex-direction: column;
-			background-color: white;
-			text-align: center;
-			transition: 0.3s;
-			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-			padding: 20px 0;
-		}
+		/*  */
+		
 		.nav-links.active {
 			left: 0;
 		}
