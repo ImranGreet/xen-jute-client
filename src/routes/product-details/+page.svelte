@@ -713,7 +713,7 @@
                         <h3>Jute Laptop Bag</h3>
                         <div class="product-card-price">$24.99</div>
                         <p>Professional laptop bag with padded interior</p>
-                        <a href="product-details.html" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
+                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 
@@ -723,7 +723,7 @@
                         <h3>Jute Backpack</h3>
                         <div class="product-card-price">$22.00</div>
                         <p>Stylish backpack with multiple compartments</p>
-                        <a href="product-details.html" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
+                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 
@@ -733,7 +733,7 @@
                         <h3>Eco Shopper Bag</h3>
                         <div class="product-card-price">$12.00</div>
                         <p>Large shopper bag with side gussets</p>
-                        <a href="product-details.html" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
+                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 
@@ -743,20 +743,12 @@
                         <h3>Jute Gift Box</h3>
                         <div class="product-card-price">$7.50</div>
                         <p>Elegant gift box with magnetic closure</p>
-                        <a href="product-details.html" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
+                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Order?</h2>
-            <p>Get samples to experience our quality firsthand or request a quote for bulk orders</p>
-            <a href="order.html" class="btn btn-light">Order Samples</a>
-            <a href="order.html#bulk-order" class="btn btn-outline" style="margin-left: 15px; border-color: white; color: white;">Request Quote</a>
-        </div>
-    </section>
+
 

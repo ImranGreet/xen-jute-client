@@ -37,6 +37,7 @@
 		<p>{product.description}</p>
 		<div class="product-actions">
 			<a href="#" class="btn btn-outline">Add To Cart</a>
+			<a href="/product-details" class="btn btn-outline">View Details</a>
 		</div>
 	</div>
 </div>
