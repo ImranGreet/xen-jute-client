@@ -1,5 +1,289 @@
+<script lang="ts">
+	import ProductCard from "../../components/Productcollection/Product-card.svelte";
 
-    <style>
+	let products = [
+		{
+			name: 'Eco-Friendly Tote Bag',
+			size: 'medium',
+			price: '$15.00',
+			description: 'A stylish and durable tote bag made from 100% jute, perfect for everyday use.',
+			icon: 'fas fa-shopping-bag',
+			badge: 'Best Seller',
+			productThumbnail:
+				'https://images.unsplash.com/photo-1643363510506-08b2511dd7fb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687'
+		},
+		{
+			name: 'Jute Laptop Bag',
+			size: 'large',
+			price: '$30.00',
+			description: 'Protect your laptop in style with this eco-friendly jute laptop bag.',
+			icon: 'fas fa-laptop',
+			badge: '',
+			productThumbnail:
+				'https://images.unsplash.com/photo-1572810677431-9a662da8d284?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170'
+		},
+		{
+			name: 'Promotional Jute Bag',
+			size: 'small',
+			price: '$8.00',
+			description: 'Customizable jute bags ideal for promotional events and giveaways.',
+			icon: 'fas fa-gift',
+			badge: '',
+			productThumbnail:
+				'https://images.unsplash.com/photo-1758708536099-9f46dc81fffc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1070'
+		}
+	];
+</script>
+
+
+   
+
+
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-container">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <!-- <div class="product-badge">Bestseller</div> -->
+                    </div>
+                    <div class="image-thumbnails">
+                        <div class="thumbnail active"></div>
+                        <div class="thumbnail"></div>
+                        <div class="thumbnail"></div>
+                        <div class="thumbnail"></div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Classic Jute Tote Bag</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="rating-count">(42 reviews)</div>
+                    </div>
+                    <div class="product-price">$8.50</div>
+                    <p class="product-description">
+                        Our Classic Jute Tote Bag combines sustainability with functionality. Made from 100% natural jute fibers, this versatile bag is perfect for everyday use, grocery shopping, or as an eco-friendly promotional item. Features reinforced handles and a sturdy base for durability.
+                    </p>
+
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                            <div class="meta-label">Load Capacity</div>
+                            <div>15 kg</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon"></div>
+                            <div class="meta-label">Dimensions</div>
+                            <div>14" × 12" × 6"</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon"></div>
+                            <div class="meta-label">Material</div>
+                            <div>100% Jute</div>
+                        </div>
+                    </div>
+
+                    <!-- Customization Options -->
+                    <div class="customization-options">
+                        <div class="option-group">
+                            <h3>Color Options</h3>
+                            <div class="color-options">
+                                <div class="color-option color-natural active" title="Natural Jute"></div>
+                                <div class="color-option color-bleached" title="Bleached Jute"></div>
+                                <div class="color-option color-dyed" title="Dyed Green"></div>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <h3>Size Options</h3>
+                            <div class="size-options">
+                                <div class="size-option active">Small (10"×12")</div>
+                                <div class="size-option">Medium (12"×14")</div>
+                                <div class="size-option">Large (14"×16")</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantity & Actions -->
+                    <div class="quantity-section">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <div>Minimum Order: 500 units</div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="order.html" class="btn">Order Sample - $8.50</a>
+                        <a href="order.html#bulk-order" class="btn btn-outline">Request Bulk Quote</a>
+                    </div>
+
+                    <div style="margin-top: 20px; font-size: 0.9rem; color: #777;">
+                        <p><i class="fas fa-shipping-fast" style="margin-right: 8px;"></i> Free sample shipping on orders over $50</p>
+                        <p><i class="fas fa-undo" style="margin-right: 8px;"></i> Sample cost credited to your first bulk order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section>
+        <div class="container">
+            <div class="product-tabs">
+                <div class="tab-headers">
+                    <div class="tab-header active">Description</div>
+                    <div class="tab-header">Specifications</div>
+                    <div class="tab-header">Features</div>
+                    <div class="tab-header">Reviews</div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active">
+                        <h3>Product Description</h3>
+                        <p>Our Classic Jute Tote Bag is crafted from premium quality jute fibers, offering both durability and eco-friendliness. The natural texture and golden hue of jute make each bag unique, while the reinforced stitching ensures long-lasting performance.</p>
+                        
+                        <p>Perfect for retail stores, promotional events, or everyday use, this tote bag combines practicality with environmental consciousness. The spacious main compartment and sturdy handles make it ideal for carrying groceries, books, beach essentials, or daily work items.</p>
+                        
+                        <h4>Key Benefits:</h4>
+                        <ul>
+                            <li>100% biodegradable and compostable</li>
+                            <li>Strong and durable construction</li>
+                            <li>Versatile for multiple uses</li>
+                            <li>Excellent for brand promotion</li>
+                            <li>Cost-effective bulk pricing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane">
+                        <h3>Technical Specifications</h3>
+                        <table class="specs-table">
+                           <tbody>
+                             <tr>
+                                <td>Material</td>
+                                <td>100% Natural Jute Fiber</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td>14" (H) × 12" (W) × 6" (D)</td>
+                            </tr>
+                            <tr>
+                                <td>Weight Capacity</td>
+                                <td>Up to 15 kg (33 lbs)</td>
+                            </tr>
+                            <tr>
+                                <td>Handle Length</td>
+                                <td>24" (adjustable)</td>
+                            </tr>
+                            <tr>
+                                <td>Color Options</td>
+                                <td>Natural, Bleached, Custom Dyes</td>
+                            </tr>
+                            <tr>
+                                <td>Printing Options</td>
+                                <td>Screen Printing, Digital Printing</td>
+                            </tr>
+                            <tr>
+                                <td>MOQ</td>
+                                <td>500 units</td>
+                            </tr>
+                            <tr>
+                                <td>Lead Time</td>
+                                <td>4-6 weeks for bulk orders</td>
+                            </tr>
+                           </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane">
+                        <h3>Product Features</h3>
+                        <ul class="features-list">
+                            <li>Reinforced cotton handles for comfort</li>
+                            <li>Double-stitched seams for durability</li>
+                            <li>Natural jute texture with rustic appeal</li>
+                            <li>Eco-friendly and sustainable material</li>
+                            <li>Customizable with your logo or design</li>
+                            <li>Available in multiple size options</li>
+                            <li>Water-resistant natural coating</li>
+                            <li>Foldable for easy storage</li>
+                            <li>Ideal for retail and promotional use</li>
+                            <li>Complies with international quality standards</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-pane">
+                        <h3>Customer Reviews</h3>
+                        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Excellent quality and service</h4>
+                            <p><strong>Sarah Johnson - EcoStore USA</strong></p>
+                            <p>"We ordered 2,000 of these tote bags for our retail store, and the quality exceeded our expectations. The printing was crisp, and the bags have held up well with daily use. Our customers love the eco-friendly aspect!"</p>
+                        </div>
+                        
+                        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <h4>Great promotional item</h4>
+                            <p><strong>Mark Thompson - GreenEvents UK</strong></p>
+                            <p>"Used these bags for our sustainability conference. They were a hit with attendees! The custom printing turned out great, and the bags are much more durable than expected. Will order again for future events."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Related Products</h2>
+                <p>Explore more sustainable jute products</p>
+            </div>
+            
+            <div class="products-grid">
+               {#each products as product}
+				<ProductCard
+					name={product.name}
+					size={product.size}
+					price={product.price}
+					description={product.description}
+					icon={product.icon}
+					badge={product.badge}
+					productThumbnail={product.productThumbnail}
+				/>
+			{/each}
+            </div>
+        </div>
+    </section>
+
+
+
+
+     <style>
 
         /* Product Details */
         .product-details {
@@ -346,7 +630,7 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
 
@@ -479,276 +763,3 @@
             }
         }
     </style>
-
-
-
-    <!-- Product Details -->
-    <section class="product-details">
-        <div class="container">
-            <div class="product-container">
-                <!-- Product Gallery -->
-                <div class="product-gallery">
-                    <div class="main-image">
-                        <!-- <div class="product-badge">Bestseller</div> -->
-                    </div>
-                    <div class="image-thumbnails">
-                        <div class="thumbnail active"></div>
-                        <div class="thumbnail"></div>
-                        <div class="thumbnail"></div>
-                        <div class="thumbnail"></div>
-                    </div>
-                </div>
-
-                <!-- Product Info -->
-                <div class="product-info">
-                    <h1>Classic Jute Tote Bag</h1>
-                    <div class="product-rating">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="rating-count">(42 reviews)</div>
-                    </div>
-                    <div class="product-price">$8.50</div>
-                    <p class="product-description">
-                        Our Classic Jute Tote Bag combines sustainability with functionality. Made from 100% natural jute fibers, this versatile bag is perfect for everyday use, grocery shopping, or as an eco-friendly promotional item. Features reinforced handles and a sturdy base for durability.
-                    </p>
-
-                    <div class="product-meta">
-                        <div class="meta-item">
-                            <div class="meta-icon">
-                                <i class="fas fa-weight-hanging"></i>
-                            </div>
-                            <div class="meta-label">Load Capacity</div>
-                            <div>15 kg</div>
-                        </div>
-                        <div class="meta-item">
-                            <div class="meta-icon"></div>
-                            <div class="meta-label">Dimensions</div>
-                            <div>14" × 12" × 6"</div>
-                        </div>
-                        <div class="meta-item">
-                            <div class="meta-icon"></div>
-                            <div class="meta-label">Material</div>
-                            <div>100% Jute</div>
-                        </div>
-                    </div>
-
-                    <!-- Customization Options -->
-                    <div class="customization-options">
-                        <div class="option-group">
-                            <h3>Color Options</h3>
-                            <div class="color-options">
-                                <div class="color-option color-natural active" title="Natural Jute"></div>
-                                <div class="color-option color-bleached" title="Bleached Jute"></div>
-                                <div class="color-option color-dyed" title="Dyed Green"></div>
-                            </div>
-                        </div>
-
-                        <div class="option-group">
-                            <h3>Size Options</h3>
-                            <div class="size-options">
-                                <div class="size-option active">Small (10"×12")</div>
-                                <div class="size-option">Medium (12"×14")</div>
-                                <div class="size-option">Large (14"×16")</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quantity & Actions -->
-                    <div class="quantity-section">
-                        <div class="quantity-controls">
-                            <button class="quantity-btn">-</button>
-                            <input type="text" class="quantity-input" value="1">
-                            <button class="quantity-btn">+</button>
-                        </div>
-                        <div>Minimum Order: 500 units</div>
-                    </div>
-
-                    <div class="action-buttons">
-                        <a href="order.html" class="btn">Order Sample - $8.50</a>
-                        <a href="order.html#bulk-order" class="btn btn-outline">Request Bulk Quote</a>
-                    </div>
-
-                    <div style="margin-top: 20px; font-size: 0.9rem; color: #777;">
-                        <p><i class="fas fa-shipping-fast" style="margin-right: 8px;"></i> Free sample shipping on orders over $50</p>
-                        <p><i class="fas fa-undo" style="margin-right: 8px;"></i> Sample cost credited to your first bulk order</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Tabs -->
-    <section>
-        <div class="container">
-            <div class="product-tabs">
-                <div class="tab-headers">
-                    <div class="tab-header active">Description</div>
-                    <div class="tab-header">Specifications</div>
-                    <div class="tab-header">Features</div>
-                    <div class="tab-header">Reviews</div>
-                </div>
-                <div class="tab-content">
-                    <div class="tab-pane active">
-                        <h3>Product Description</h3>
-                        <p>Our Classic Jute Tote Bag is crafted from premium quality jute fibers, offering both durability and eco-friendliness. The natural texture and golden hue of jute make each bag unique, while the reinforced stitching ensures long-lasting performance.</p>
-                        
-                        <p>Perfect for retail stores, promotional events, or everyday use, this tote bag combines practicality with environmental consciousness. The spacious main compartment and sturdy handles make it ideal for carrying groceries, books, beach essentials, or daily work items.</p>
-                        
-                        <h4>Key Benefits:</h4>
-                        <ul>
-                            <li>100% biodegradable and compostable</li>
-                            <li>Strong and durable construction</li>
-                            <li>Versatile for multiple uses</li>
-                            <li>Excellent for brand promotion</li>
-                            <li>Cost-effective bulk pricing</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-pane">
-                        <h3>Technical Specifications</h3>
-                        <table class="specs-table">
-                           <tbody>
-                             <tr>
-                                <td>Material</td>
-                                <td>100% Natural Jute Fiber</td>
-                            </tr>
-                            <tr>
-                                <td>Dimensions</td>
-                                <td>14" (H) × 12" (W) × 6" (D)</td>
-                            </tr>
-                            <tr>
-                                <td>Weight Capacity</td>
-                                <td>Up to 15 kg (33 lbs)</td>
-                            </tr>
-                            <tr>
-                                <td>Handle Length</td>
-                                <td>24" (adjustable)</td>
-                            </tr>
-                            <tr>
-                                <td>Color Options</td>
-                                <td>Natural, Bleached, Custom Dyes</td>
-                            </tr>
-                            <tr>
-                                <td>Printing Options</td>
-                                <td>Screen Printing, Digital Printing</td>
-                            </tr>
-                            <tr>
-                                <td>MOQ</td>
-                                <td>500 units</td>
-                            </tr>
-                            <tr>
-                                <td>Lead Time</td>
-                                <td>4-6 weeks for bulk orders</td>
-                            </tr>
-                           </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="tab-pane">
-                        <h3>Product Features</h3>
-                        <ul class="features-list">
-                            <li>Reinforced cotton handles for comfort</li>
-                            <li>Double-stitched seams for durability</li>
-                            <li>Natural jute texture with rustic appeal</li>
-                            <li>Eco-friendly and sustainable material</li>
-                            <li>Customizable with your logo or design</li>
-                            <li>Available in multiple size options</li>
-                            <li>Water-resistant natural coating</li>
-                            <li>Foldable for easy storage</li>
-                            <li>Ideal for retail and promotional use</li>
-                            <li>Complies with international quality standards</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-pane">
-                        <h3>Customer Reviews</h3>
-                        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h4>Excellent quality and service</h4>
-                            <p><strong>Sarah Johnson - EcoStore USA</strong></p>
-                            <p>"We ordered 2,000 of these tote bags for our retail store, and the quality exceeded our expectations. The printing was crisp, and the bags have held up well with daily use. Our customers love the eco-friendly aspect!"</p>
-                        </div>
-                        
-                        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h4>Great promotional item</h4>
-                            <p><strong>Mark Thompson - GreenEvents UK</strong></p>
-                            <p>"Used these bags for our sustainability conference. They were a hit with attendees! The custom printing turned out great, and the bags are much more durable than expected. Will order again for future events."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Products -->
-    <section class="related-products">
-        <div class="container">
-            <div class="section-title">
-                <h2>Related Products</h2>
-                <p>Explore more sustainable jute products</p>
-            </div>
-            
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-card-image"></div>
-                    <div class="product-card-info">
-                        <h3>Jute Laptop Bag</h3>
-                        <div class="product-card-price">$24.99</div>
-                        <p>Professional laptop bag with padded interior</p>
-                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-card-image"></div>
-                    <div class="product-card-info">
-                        <h3>Jute Backpack</h3>
-                        <div class="product-card-price">$22.00</div>
-                        <p>Stylish backpack with multiple compartments</p>
-                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-card-image"></div>
-                    <div class="product-card-info">
-                        <h3>Eco Shopper Bag</h3>
-                        <div class="product-card-price">$12.00</div>
-                        <p>Large shopper bag with side gussets</p>
-                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-card-image"></div>
-                    <div class="product-card-info">
-                        <h3>Jute Gift Box</h3>
-                        <div class="product-card-price">$7.50</div>
-                        <p>Elegant gift box with magnetic closure</p>
-                        <a href="/product-details" class="btn" style="width: 100%; margin-top: 15px;">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-

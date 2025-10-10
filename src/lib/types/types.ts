@@ -5,7 +5,7 @@ export default interface Product {
     description: string;
     icon: string;
     badge?: string;
-    productThumbnail:string
+    productThumbnail: string
 }
 
 export interface BlogPost {
@@ -40,12 +40,12 @@ export interface Uses {
 
 
 export interface GiftFeature {
-    id:string,
-    giftTitle:string,
-    giftCategory:string,
-    giftMaterial:string[],
-    giftCode:string,
-    giftDimentions:number[],
-    giftFeatures:string[],
-    giftThumbnail:string
+    id: string,
+    giftTitle: string,
+    giftCategory: string,
+    giftMaterial: string[],
+    giftCode: string,
+    giftDimentions: number[],
+    giftFeatures: string[],
+    giftThumbnail: string
 }
