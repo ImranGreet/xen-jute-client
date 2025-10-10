@@ -5,6 +5,7 @@ export default interface Product {
     description: string;
     icon: string;
     badge?: string;
+    productThumbnail:string
 }
 
 export interface BlogPost {

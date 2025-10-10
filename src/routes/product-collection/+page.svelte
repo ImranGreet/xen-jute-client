@@ -1,33 +1,38 @@
 <script lang="ts">
-
 	import ProductCard from '../../components/Productcollection/Product-card.svelte';
-	
-	let products=[{
-		name: 'Eco-Friendly Tote Bag',
-		size: 'medium',
-		price: '$15.00',
-		description: 'A stylish and durable tote bag made from 100% jute, perfect for everyday use.',
-		icon: 'fas fa-shopping-bag',
-		badge: 'Best Seller'
-	},
-	{
-		name: 'Jute Laptop Bag',
-		size: 'large',
-		price: '$30.00',
-		description: 'Protect your laptop in style with this eco-friendly jute laptop bag.',
-		icon: 'fas fa-laptop',
-		badge: ''
-	},
-	{
-		name: 'Promotional Jute Bag',
-		size: 'small',
-		price: '$8.00',
-		description: 'Customizable jute bags ideal for promotional events and giveaways.',
-		icon: 'fas fa-gift',
-		badge: '',
-	},
-	]
 
+	let products = [
+		{
+			name: 'Eco-Friendly Tote Bag',
+			size: 'medium',
+			price: '$15.00',
+			description: 'A stylish and durable tote bag made from 100% jute, perfect for everyday use.',
+			icon: 'fas fa-shopping-bag',
+			badge: 'Best Seller',
+			productThumbnail:
+				'https://images.unsplash.com/photo-1643363510506-08b2511dd7fb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687'
+		},
+		{
+			name: 'Jute Laptop Bag',
+			size: 'large',
+			price: '$30.00',
+			description: 'Protect your laptop in style with this eco-friendly jute laptop bag.',
+			icon: 'fas fa-laptop',
+			badge: '',
+			productThumbnail:
+				'https://images.unsplash.com/photo-1572810677431-9a662da8d284?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170'
+		},
+		{
+			name: 'Promotional Jute Bag',
+			size: 'small',
+			price: '$8.00',
+			description: 'Customizable jute bags ideal for promotional events and giveaways.',
+			icon: 'fas fa-gift',
+			badge: '',
+			productThumbnail:
+				'https://images.unsplash.com/photo-1758708536099-9f46dc81fffc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1070'
+		}
+	];
 </script>
 
 <!-- Page Header -->
@@ -91,15 +96,16 @@
 <!-- Products Section -->
 <section class="products">
 	<div class="container">
-		<div class="products-grid" id="productsContainer"> 
+		<div class="products-grid" id="productsContainer">
 			{#each products as product}
-				<ProductCard 
+				<ProductCard
 					name={product.name}
 					size={product.size}
 					price={product.price}
 					description={product.description}
 					icon={product.icon}
 					badge={product.badge}
+					productThumbnail={product.productThumbnail}
 				/>
 			{/each}
 		</div>
